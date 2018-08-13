@@ -5,66 +5,211 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-// Kokar vattnet?
-    int vattentemp =100;
+
+    }
+}
+
+
+
+
+/*
+public class koka {
+    // Kokar vattnet?
+    Scanner input = new Scanner(System.in);
+        while (true){
+        int numb = input.nextInt();
+
+        int vattentemp = numb;
 
         if (vattentemp == 100) {
             System.out.println("Vattnet kokar");
         } else if (vattentemp == 50) {
             System.out.println("Det är halvvägs nu!");
-        } else if (vattentemp == 0){
+        } else {
             System.out.println("Vattnet kokar inte");
         }
     }
-// Går det att bada?
-        private int vatten;
+}
 
-        public boolean vatten() {
-            if ((vatten) < 30) {
-                return true;
+
+public class bada{
+ Scanner input = new Scanner(System.in);
+
+        while (true){
+
+            System.out.println("Finns det vatten? ");
+            boolean vatten = input.nextBoolean();
+            System.out.println("Hur många grader är vattnet? ");
+            int grader = input.nextInt();
+
+
+            if (vatten && (grader > 30)){
                 System.out.println("Varsågod och bada!");
             }
-            else {(vatten) > 30) {
-                return false;
-                System.out.println("Det går inte att bada!");
+            else if (!vatten || (grader < 30)){
+                System.out.println("Det går inte att bada.");
             }
+            System.out.println();
         }
+
     }
-// Vad blir det för middag?
-    public class dagar {
-            public void main () {
-                int dag;
-                dag = 0;
-                switch dag() {
-                    Måndag:
-                    System.out.println("Kyckling");
-                    Tisdag:
-                    System.out.println("Pankaka");
-                    Onsdag:
-                    System.out.println("Ärtsoppa");
-                    Torsdag:
-                    System.out.println("Gryta");
-                    Fredag;
-                    System.out.println("Kalv");
-                    Lördag;
-                    System.out.println("Vegetariskt");
-                    Söndag;
-                    System.out.println("Kålsoppa");
-                }
+}
+
+public class hasttokig(){
+Scanner scanner = new Scanner(System.in);
+        int age = scanner.nextInt();
+
+
+        if (age < 12){
+            System.out.println("Du är för ung för att tävla!");
+        }
+        else if (age >= 12){
+            System.out.println("Vikt: ");
+            int vikt = scanner.nextInt();
+
+            if (vikt <= 30){
+                System.out.println("A-ponny");
             }
-    }
-// For loop
-    public class foorlop {
+            else if (vikt <= 50){
+                System.out.println("B-ponny");
 
-        public void main (){
+            }else if (vikt <= 65){
+                System.out.println("C-ponny");
 
-            int a;
-            int b = 10;
+            }else if (vikt > 65){
+                System.out.println("Det finns inga ponnys för denna viktklass");
+            }
+            System.out.println();
+        }
 
-            for (a = 0; a < b; a++);
+}
 
-                System.out.println("Värde =" +  a);
+public class middag1 () {
+
+Scanner scanner = new Scanner(System.in);
+        System.out.print("Vad är det för dag? ");
+        String dag = scanner.nextLine();
+
+        switch (dag) {
+            case "Måndag":
+                System.out.println("Kyckling");
+            case "Tisdag":
+                System.out.println("Pannkaka");
+            case "Onsdag":
+                System.out.println("Ärtsoppa");
+            case "Torsdag":
+                System.out.println("Gryta");
+            case "Fredag":
+                System.out.println("Kalv");
+            case "Lördag":
+                System.out.println("Vegetariskt");
+            case "Söndag":
+                System.out.println("Kålsoppa");
 
         }
     }
 }
+
+
+public class middag2 () {
+
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Vad är det för dag? ");
+        String dag = scanner.nextLine();
+
+        switch (dag) {
+            case "Måndag":
+                System.out.println("Kyckling");
+            case "Tisdag":
+                System.out.println("Pannkaka");
+            case "Onsdag":
+                System.out.println("Ärtsoppa");
+            case "Torsdag":
+                System.out.println("Gryta");
+            case "Fredag":
+            case "Lördag":
+            case "Söndag":
+                System.out.println("Kålsoppa");
+                break;
+
+        }
+}
+
+public class Fragesport () {
+Scanner scanner = new Scanner(System.in);
+        String answer;
+        int points = 0;
+
+        System.out.println("Frågesport!");
+        System.out.println();
+        System.out.print("Namn: ");
+        String name = scanner.nextLine();
+
+
+        System.out.println("Fråga 1: Vad är Sveriges huvudstad?");
+        answer = scanner.nextLine();
+
+        if(answer.equals("Stockholm")){
+            points++;
+            System.out.println(points);
+        }
+
+        System.out.println("Fråga 2: Är himlen blå?");
+        answer = scanner.nextLine();
+        if (answer.equals("Ja")){
+            points++;
+            System.out.println(points);
+        }
+
+        System.out.println("Fråga 3: Vad är Englands huvudstad?");
+        answer = scanner.nextLine();
+        if (answer.equals("London")) {
+            points++;
+        }
+        System.out.println("Fråga 4: Hur många invånare har Sverige?");
+        answer = scanner.nextLine();
+        if (answer.equals("10 miljoner")) {
+            points++;
+        }
+
+        System.out.println("Fråga 5: Hur många kanter har en kvadrat?");
+        answer = scanner.nextLine();
+        if (answer.equals("4")) {
+            points++;
+        }
+
+        if( points == 0) {
+            System.out.println("This is a sad day for sports");
+        }else if(points < 3){
+            System.out.println(name + " won bronze! ");
+        }else if(points < 5 ){
+            System.out.println(name + " won silver! ");
+        } else if (points == 5) {
+            System.out.println("Wow, " + name + " went gold!");
+        }
+
+}
+
+public class for-loop () {
+        int temp = 0;
+        for (int i = 0; i < 10; i++) {
+            temp = temp + i;
+            System.out.println(temp);
+        }
+}
+
+public class farinvasion () {
+
+        int numberOfSheep = 4;
+        int monthsToPrint = 12;
+
+        for (int monthNumber = 1; monthNumber < monthsToPrint; monthNumber++ ){
+            numberOfSheep = numberOfSheep * 4;
+            System.out.println("There will be " + numberOfSheep + " after " + monthNumber +
+            " month(s)");
+
+        }
+
+}
+
+*/

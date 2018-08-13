@@ -1,2 +1,1 @@
-# ninja
 # JavaRep

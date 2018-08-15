@@ -1,10 +1,14 @@
 package com.company;
 
+import javax.swing.*;
+import java.util.Arrays;
 import java.util.Scanner;
+import java.util.Stack;
 
 public class Main {
 
     public static void main(String[] args) {
+
 
     }
 }
@@ -211,5 +215,132 @@ public class farinvasion () {
         }
 
 }
+
+public class jamnatal
+
+    int i = 0;
+
+        while (i<=10)
+        {
+            if (i % 2 == 0)
+            {
+                System.out.print(i);
+            }
+            i++;
+        }
+}
+
+public class looping
+
+    for (int i = 1; i <= 3; i++) {
+            for (int j = 1; j <= 10; j++) {
+                System.out.print((i * j) + " ");
+            }
+            System.out.println();
+        }
+    }
+}
+
+public class mjau
+
+    Scanner scanner = new Scanner(System.in);
+        String answer;
+        int mjau = 0;
+
+        System.out.println("Hur många mjau vill du ha?");
+        answer = scanner.nextLine();
+
+        while (true) {
+            if (mjau == 3) {
+                System.out.println("mjau mjau mjau");
+            }
+            if (mjau == 4) {
+                System.out.println("mjau mjau mjau mjau");
+            }
+            if (mjau == 0) {
+                System.out.println("avslutas");
+            }
+            break;
+        }
+    }
+}
+
+public class sort1
+
+    int [] array = {45, 23, -5, 12};
+        Arrays.sort(array);
+        for (int i = 0; i < array.length; i++) {
+            System.out.println(array[i]);
+        };
+    }
+}
+
+public class sort2
+
+    String [] array = {"string" , "hej", "what", "wordsyo"};
+        Arrays.sort(array);
+        for (int i = 0; i < array.length; i++) {
+            System.out.println(array[i]);
+        };
+    }
+}
+
+public class multiply
+
+     public static void main(String[] args) {
+
+        System.out.println(multiply(8,4));
+
+    }
+
+    public static int multiply(int x, int y) {
+        return x * y;
+    }
+}
+
+public class calculate {
+
+
+        System.out.println(calculate(8, 4, 2));
+
+    }
+
+    public static int calculate(int x, int y, int p) {
+        return x * y / p;
+    }
+}
+
+public class stringchecker
+
+    public static void main(String[] args) {
+
+        String s = "Strängen du matade in är 14 tecken lång";
+
+        System.out.println(s);
+    }
+}
+
+public class stringextractor
+
+    public static void main(String[] args) {
+
+        String s = "Goodbye World";
+
+        System.out.println(s.toUpperCase());
+    }
+}
+
+public class array {
+
+    public static void main(String[] args) {
+
+        int num[]={23, 45, 54, 12, 77};
+
+        System.out.println(num[0]);
+        System.out.println(num[4]);
+    }
+}
+
+
 
 */
